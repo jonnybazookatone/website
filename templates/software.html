@@ -1,0 +1,68 @@
+{% extends "skeleton.html" %}
+{% block content %}
+
+<div style="width: 500px;"><img source="https://lh4.googleusercontent.com/-kw5ea_0StLM/Ud6pseUcVfI/AAAAAAAAA-E/vbO1BOcmG7w/s512/github.jpg"></div>
+
+<div class="row-fluid">
+	<div class="span4">
+	</div>
+
+	<div class="span8">
+           	<div class="page-header">
+           		<h1>Astronomical Software</h1>
+           	</div>
+			
+			<div class="row-fluid">
+				<div class="span2" style="width: 80px;"><img class="img-polaroid" src="https://lh4.googleusercontent.com/-kw5ea_0StLM/Ud6pseUcVfI/AAAAAAAAA-E/vbO1BOcmG7w/s512/github.jpg"><img class="img-polaroid" src="https://lh3.googleusercontent.com/-vfhtmSB9Tkw/Ud6q5zr11CI/AAAAAAAAA-g/E1rt9ynFqlg/s720/python.jpg"></div>  
+           	
+
+           		<div class="span10">
+					<pre><code><h3>github:<a href="https://github.com/jonnybazookatone/pyweb">pyweb</a></h3>
+Python object oriented class to describe a webpage. Parses the page you specify and allows you to query the object with inbuilt functions.
+					</code></pre>
+
+
+					<pre><code><h3>github:<a href="https://github.com/jonnybazookatone/pyservatory">pyservatory</a></h3>
+A wrapper for the python code SkyCalc. The original code is in python, but is not written so nicely that I made an object oriented version.
+					</code></pre>
+
+
+					<pre><code><h3>github:<a href="https://github.com/jonnybazookatone/hawki">hawki</a></h3>
+A pipeline that is used to automatically determine if a GRB is observable from Paranal, Chile. It checks if the correct instrument is mounted and then creates all the required documentation to trigger the telescope.
+					</code></pre>
+           		</div>	
+           	
+			</div>
+			<br><br>
+			<div class="page-header">
+           		<h1>Generic Software</h1>
+           	</div>
+
+			<div class="row-fluid">
+				<div class="span2" style="width: 80px;"><img class="img-polaroid" src="https://lh4.googleusercontent.com/-kw5ea_0StLM/Ud6pseUcVfI/AAAAAAAAA-E/vbO1BOcmG7w/s512/github.jpg"><img class="img-polaroid" src="https://lh3.googleusercontent.com/-vfhtmSB9Tkw/Ud6q5zr11CI/AAAAAAAAA-g/E1rt9ynFqlg/s720/python.jpg"></div>  
+
+           		<div class="span10">
+					<pre><code><h3>github:<a href="https://github.com/jonnybazookatone/backuptools">backuptools</a></h3>
+Object oriented classes of folders and usbdisks written in python. It makes it easier to write simple scripts to backup folders, when the full disk does not need to be stored.
+					</code></pre>
+
+					<pre><code><h3>github:<a href="https://github.com/jonnybazookatone/rss">rss</a></h3>
+A class based on python RSS tools that allows the latest ArXiv e-print list to be downloaded. It then searches based on pre-defined user keywords.From this you can e-mail yourself or generate pages of the relevant papers of interest for each day.</code></pre>
+           		</div>
+           	</div>
+
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+  1 Python back-up utilities
+rss 1 download and search journals via rss feeds and create a webpage output
+pyweb 1 webpage object classes
+pyservatory 1 Observational astronomy tools
+hawki 
+
+ 
+{% include "footer.html" %}
+{% endblock %}

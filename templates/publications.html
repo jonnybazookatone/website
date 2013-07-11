@@ -1,0 +1,240 @@
+{% extends "skeleton.html" %}
+{% block content %}
+
+        <style>
+          .affix {
+            position: auto;
+            top: 50px;
+            left: auto;
+            right: auto;
+          }
+        </style>
+
+    <!-- Docs nav
+    ================================================== -->
+
+<div class="container-fluid">
+
+<div class="span4">
+	<div class="nav-pills" style="position: fixed;"> <!-- data-spy="affix" data-offset-top="500"> -->
+    	<div class="navbar-inner">
+            <ul class="nav" style="margin-top: 15px;">
+          		<li><a href="/publications/">Publication List<i class="icon-chevron-right"></i></a></li>
+              <button type="button" data-toggle="modal" data-target="#LGRBR">Long Gamma-ray Burst Rate</button><br>
+              <button type="button" data-toggle="modal" data-target="#SOLARMET">Solar Metallicity GRB Galaxy</button>
+        	</ul>
+    	</div> <!-- navbar-inner -->
+	</div> <!-- navbar -->
+</div>
+
+<div id="LGRBR" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 800px;">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">Long Gamma-ray Burst Rate</h3>
+</div>
+<div class="modal-body">
+<p>The amount of star formation and how it has changed since the Universe began is usually described by the cosmic star formation history, or also commonly known as the Madau plot. This knowledge is used to place constraints on how galaxies evolve and can also be used to gain insights on time periods after the Big Bang.</p>
+</div>
+
+<div style="width: 500px; display: table-cell; vertical-align: middle ">
+  <img src="https://lh5.googleusercontent.com/-aej6iGQtrOQ/Ud6inIaC1VI/AAAAAAAAA9A/bt4yR2bAUCI/s576/csfh_end.jpg">
+</div>
+
+<div class="modal-body">
+<p>The problem is that the current methods that are used to make the Madau plot, struggle to go to higher redshifts. Normal methods involve measuring the star formation within galaxies that are at high redshift. The problem is that these galaxies can be very faint and so very difficult to detect with current state-of-the-art detectors. To tackle this problem, we utilise long gamma-ray bursts to estimate the cosmic star formation history to high redshifts, because of the intrinsically bright nature of gamma-ray bursts, which makes them easier to detect across all redshifts. Unfortunately, the way in which the long gamma-ray burst rate is converted into the cosmic star formation history is not so simple and, therefore, can change the results substantially. In our work, we investigate different biases that may exist and their underlying effects.</p>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>
+</div>
+
+<div id="SOLARMET" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 800px;">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">Solar Metallicity of GRB110918A's Host Galaxy</h3>
+</div>
+<div class="modal-body">
+<p>Long gamma-ray bursts are believed to be the beacon of the death of a massive, rapidly rotating star. Current simulations that try to create a long gamma-ray burst from these types of stars do not work, unless they exist in regions with low quantities of metals. Initial measurements of the regions in which long gamma-ray bursts occured have shown that they also preferrentially exist in metal poor regions. However, we used the spectrograph X-Shooter mounted at the Very Large Telescope, in Chile, to measure the metallicity in the host galaxy of a gamma-ray burst that occured on the 18th September 2011. We find that it has a metallicity close to that of our sun. This measurements adds to the few other cases that have been found so far, suggesting the idea of the progenitor it not as simple as it was first thought. </p>
+</div>
+
+<div style="width: 1000px;">
+  <img class="img" src="https://lh5.googleusercontent.com/-1uUlkyM0O4w/Ud6l5zUvJII/AAAAAAAAA9w/_0xuRdpKd_g/s753/spec_host.jpg">
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>
+</div>
+
+
+
+  	<div class="span8">
+
+           	<div class="page-header">
+           		<h1>Publication List</h1>
+           	</div>
+
+           	<h2>Articles</h2>
+
+           	<p>
+			<FONT COLOR="red">1</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2013arXiv1306.0892E">The low-extinction afterglow in the solar-metallicity host galaxy of &#947;-ray burst 110918A</A><br>
+			<b>Elliott, J.</b>, Krühler, T., Greiner, J., Savaglio, S., Olivares E., F., Rau, A., de Ugarte Postigo, A., Sánchez-Ramírez, R., Wiersema, K., Schady, P., Kann, D. A., Filgas, R., Nardini, M., Berger, E., Fox, D., Gorosabel, J., Klose, S., Levan, A., Nicuesa Guelbenzu, A., Rossi, A., Schmidl, S., Sudilovsky, V., Tanvir, N. R., Thöne, C. C.<br>
+			<u>Astronomy and Astrophysics</u> in press, 2013
+			</p><br>
+
+			<p>
+			<FONT COLOR="red">2</FONT>. <A href="http://adsabs.harvard.edu/abs/2012A%26A...539A.113E">The long &#947;-ray burst rate and the correlation with host galaxy properties</A><br>
+           	<b>Elliott, J.</b>, Greiner, J., Khochfar, S., Schady, P., Johnson, J. L., &amp; Rau, A.
+           	<br> <u>Astronomy and Astrophysics </u>, 2013
+           	</p><br>
+
+           	<p>
+			<FONT COLOR="red">3</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2013arXiv1304.5852G">The unusual afterglow of the Gamma-Ray Burst 100621A</A><br>
+			Greiner, J., Krühler, T., Nardini, M., Filgas, R., Moin, A., de Breuck, C., Montenegro-Montes, F., Lundgren, A., Klose, S., Afonso, P. M. J., Bertoldi, F., <b>Elliott, J.</b>, Kann, D. A., Knust, F., Menten, K., Nicuesa Guelbenzu, A., Olivares E., F., Rau, A., Rossi, A., Schady, P., Schmidl, S., Siringo, G., Spezzi, L., Sudilovsky, V., Tingay, S. J., Updike, A. C., Wang, Z., Weiss, A., Wieringa, M., Wyrowski, F.<br>
+			<u>Astronomy and Astrophysics</u> in press, 2013
+			</p><br>
+
+			<p>
+			<FONT COLOR="red">4</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2013A%26A...552A.143S">Clustering of galaxies around gamma-ray burst sight-lines</A><br>
+			Sudilovsky, V., Greiner, J., Rau, A., Salvato, M., Savaglio, S., Vergani, S. D., Schady, P., <b>Elliott, J.</b>, Krühler, T., Kann, D. A., Klose, S., Rossi, A., Filgas, R., Schmidl, S.
+           	<br> <u>Astronomy and Astrophysics </u>, 2013
+           	</p><br>
+
+
+			<p><FONT COLOR="red">5</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2012ApJ...760L..36R">PSR J1311-3430: A Heavyweight Neutron Star with a Flyweight Helium Companion</A><br>
+			Romani, W., Filippenko, V., Silverman, M., Cenko, S., Greiner, J., Rau, A., <b>Elliott, J.</b>, Pletsch, Holger J.
+			<br><u>Astrophysical Journal Letters</u>, 2012
+			</p><br>
+
+
+			<p><FONT COLOR="red">6</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2012A%26A...548A.101N">Multi-color observations of short GRB afterglows: 20 events observed between 2007 and 2010</A><br>
+			Nicuesa Guelbenzu, A., Klose, S., Greiner, J., Kann, D. A., Krühler, T., Rossi, A., Schulze, S., Afonso, P. M. J., <b>Elliott, J.</b>, Filgas, R., Hartmann, D. H., Küpcü Yoldaş, A., McBreen, S., Nardini, M., Olivares E., F., Rau, A., Schmidl, S., Schady, P., Sudilovsky, V., Updike, A. C., Yoldaş, A.
+			<br><u>Astronomy and Astrophysics</u>, 2012
+			</p><br>
+
+
+			<p><FONT COLOR="red">7</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2012A%26A...546A.101F">GRB 091029: at the limit of the fireball scenario</A><br>
+			Filgas, R., Greiner, J., Schady, P., de Ugarte Postigo, A., Oates, S. R., Nardini, M., Krühler, T., Panaitescu, A., Kann, D. A., Klose, S., Afonso, P. M. J., Allen, W. H., Castro-Tirado, A. J., Christie, G. W., Dong, S., <b>Elliott, J.</b>, Natusch, T., Nicuesa Guelbenzu, A., Olivares E., F., Rau, A., Rossi, A., Sudilovsky, V., Yock, P. C. M.
+			<br><u>Astronomy and Astrophysics</u>, 2012
+			</p><br>		
+
+	
+			<p><FONT COLOR="red">8</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2012A%26A...539A..76O">The fast evolution of SN 2010bh associated with XRF 100316D</A><br>
+			Olivares E., F., Greiner, J., Schady, P., Rau, A., Klose, S., Krühler, T., Afonso, P. M. J., Updike, A. C., Nardini, M., Filgas, R., Nicuesa Guelbenzu, A., Clemens, C., <b>Elliott, J.</b>, Kann, D. A., Rossi, A., Sudilovsky, V.
+			<br><u>Astronomy and Astrophysics</u>, 2012
+			</p><br>			
+
+	
+			<p><FONT COLOR="red">9</FONT>. <A href="">The late-time afterglow of the extremely energetic short burst GRB 090510 revisited</A></
+			Nicuesa Guelbenzu, A., Klose, S., Krühler, T., Greiner, J., Rossi, A., Kann, D. A., Olivares, F., Rau, A., Afonso, P. M. J., <b>Elliott, J.</b> Filgas, R. Küpcü Yoldaş, A. McBreen, S. Nardini, M. Schady, P. Schmidl, S. Sudilovsky, V., Updike, A. C., Yoldaş, A.
+			<br><u>Astronomy and Astrophysics</u>, 2012
+			</p><br>						
+
+			<p><FONT COLOR="red">10</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2012A%26A...538A..26R">
+			BL Lacertae objects beyond redshift 1.3 - UV-to-NIR photometry and photometric redshift for Fermi/LAT blazars</A><br>
+			Rau, A.; Schady, P.; Greiner, J.; Salvato, M.; Ajello, M.; Bottacini, E.; Gehrels, N.; Afonso, P. M. J.; <b>Elliott, J.</b>; Filgas, R.; Kann, D. A.; Klose, S.; Krühler, T.; Nardini, M.; Nicuesa Guelbenzu, A.; Olivares E., F.; Rossi, A.; Sudilovsky, V.; Updike, A. C.; Hartmann, D. H.
+      <br><u>Astronomy and Astrophysics</u>, 2012
+      </p><br> 
+
+      <p><FONT COLOR="red">11</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2011A%26A...534A.108K">The SEDs and host galaxies of the dustiest GRB afterglows</A><br>
+      Krühler, T., Greiner, J., Schady, P., Savaglio, S., Afonso, P. M. J., Clemens, C., <b>Elliott, J.</b>, Filgas, R., Gruber, D., Kann, D. A., Klose, S., Küpcü-Yoldaş, A., McBreen, S., Olivares, F., Pierini, D., Rau, A., Rossi, A., Nardini, M., Nicuesa Guelbenzu, A., Sudilovsky, V., Updike, A. C.
+      <br><u>Astronomy and Astrophysics</u>, 2011
+      </p><br> 
+  
+      <p><FONT COLOR="red">12</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2011A%26A...535A..57F">GRB 091127: The cooling break race on magnetic fuel</A><br>
+      Filgas, R., Greiner, J., Schady, P., Krühler, T., Updike, A. C., Klose, S., Nardini, M., Kann, D. A., Rossi, A., Sudilovsky, V., Afonso, P. M. J., Clemens, C., <b>Elliott, J.</b>, Nicuesa Guelbenzu, A., Olivares E., F., Rau, A.
+      <br><u>Astronomy and Astrophysics</u>, 2011
+      </p><br> 
+
+      <p><FONT COLOR="red">13</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2011A%26A...531A..39N">On the nature of the extremely fast optical rebrightening of the afterglow of GRB 081029</A><br>
+      Nardini, M., Greiner, J., Krühler, T., Filgas, R., Klose, S., Afonso, P., Clemens, C., Guelbenzu, A. N., Olivares E., F., Rau, A., Rossi, A., Updike, A., Küpcü Yoldaş, A., Yoldaş, A., Burlon, D., <b>Elliott, J.</b>, Kann, D. A.
+      <br><u>Astronomy and Astrophysics</u>, 2011
+      </p><br> 
+
+      <h2>Conference Proceedings</h2>
+			<b>Elliott, J.</b>, Greiner, J., Khochfar, S., Schady, P., Johnson, J. L., Rau, A., <u>Proceedings of the Gamma-Ray Bursts 2012 Conference (GRB 2012). May 7-11, 2012. Munich, Germany</u>. <A href="http://pos.sissa.it/cgi-bin/reader/conf.cgi?confid=152">The long &#947;-ray burst rate and the correlation with host galaxy properties</A><br>
+      </p><br> 
+      
+      Nardini, M., Greiner, J., Filgas, R., <b>Elliott, J.</b>, Olivares E., F., Rau, A., Schady, P., Sudilovsky, V., Klose, S., Kann, D. A., Nicuesa Guilbenzu, A., Rossi, A., Krühler, T., Afonso, P., Updike, A., <u>Proceedings of the Gamma-Ray Bursts 2012 Conference (GRB 2012). May 7-11, 2012. Munich, Germany</u>. <A href="http://cdsads.u-strasbg.fr/abs/2012grb..confE.104N">Unveiling long lasting central engine activity with Optical-NIR afterglows</A><br>
+      </p><br> 
+
+           	
+           	<h2>GRB Circular Network</h2>
+
+            <P>Elliott, J., Schmidl, S., Klose, S., &amp; Greiner, J. 2012,  GRB Coordinates Network <A href="http://ad
+sabs.harvard.edu/abs/2012GCN..13409...1E">GRB 120701A: GROND detection of the afterglow.</A> 
+            <P>Elliott, J., Greiner, J., Olivares, E. F., Rau, A., &amp; Kruehler, T. 2012, GRB Coordinates Network <A 
+href="http://adsabs.harvard.edu/abs/2012GCN..13003...1E">GRB 120302A: GROND detection of an afterglow candidate.</A> 
+            <P>Elliott, J., Klose, S., &amp; Greiner, J. 2012,  GRB Coordinates Network <A href="http://adsabs.harvard.
+edu/abs/2012GCN..12988...1E">GRB 120224A: GROND detection of the afterglow candidate.</A> 
+            <P>Elliott, J., Sudilovsky, V., &amp; Greiner, J. 2012,  GRB Coordinates Network <A href="http://adsabs.har
+vard.edu/abs/2012GCN..12931...1E">GRB 120211A: GROND upper limits.</A> 
+            <P>Elliott, J., Kruehler, T., Klose, S., Kann, D. A. Rau, A., &amp; Greiner, J. 2011,  GRB Coordinates Netw
+ork <A href="http://adsabs.harvard.edu/abs/2011GCN..12366...1E">GRB 110918A: GROND detection of the afterglow candidate.</A> 
+            <P>Elliott, J., Kann, D. A., &amp; Greiner, J. 2011,  GRB Coordinates Network <A href="http://adsabs.harvar
+d.edu/abs/2011GCN..12356...1E">GRB 110915B: GROND observations of the Optical/NIR afterglow candidate.</A> 
+            <P>Elliott, J., Kann, D. A., &amp; Greiner, J. 2011,  GRB Coordinates Network <A href="http://adsabs.harvar
+d.edu/abs/2011GCN..12353...1E">GRB 110915A: GROND upper limits.</A> 
+            <P>Elliott, J., Nicuesa Guelbenzu, A., Kruehler, T., &amp; Greiner, J. 2011,  GRB Coordinates Network <A hr
+ef="http://adsabs.harvard.edu/abs/2011GCN..11743...1E">GRB 110213B: GROND observations of the optical/NIR afterglow.</A> 
+            <P>Elliott, J., Filgas, R., &amp; Greiner, J. 2011,  GRB Coordinates Network <A href="http://adsabs.harvard
+.edu/abs/2011GCN..11669...1E">GRB 110206A: decay of afterglow candidate.</A> 
+            <P>Elliott, J., Filgas, R., Kruehler, T., &amp; Greiner, J. 2011,  GRB Coordinates Network <A href="http://
+adsabs.harvard.edu/abs/2011GCN..11665...1E">GRB 110206A: GROND detection of afterglow candidate.</A> 
+            <P>Elliott, J., Filgas, R., Greiner, J., Schady, P., &amp; Kruehler, T. 2010,  GRB Coordinates Network <A h
+ref="http://adsabs.harvard.edu/abs/2010GCN..11421...1E">GRB 101117B: GROND upper limits.</A> 
+            <P>Elliott, J., Filgas, R., &amp; Greiner, J. 2010,  GRB Coordinates Network <A href="http://adsabs.harvard
+.edu/abs/2010GCN..11409...1E">GRB 101114A: GROND upper limits.</A> 
+
+
+
+            <h2> Presentations </h2>
+
+            <P><A href="files/GDRE_2012_presentation.pdf">GDRE Paris 2012</A>
+
+            <P><A href="files/HEG_2012_presentation.pdf">HEG Munich 2012</A>
+
+            <P><A href="files/MunichGRB_2012_presentation.pdf">Fermi/Swift GRB Symposium Munich 2012</A>
+
+            <P><A href="files/Liverpool_2012_presentation.pdf">Liverpool Gamma Ray Bursts in the Era of Rapid Follow-up
+2012</A>
+
+            <P><A href="MPEScienceCoffee_2012_presentation.pdf">MPE Science Coffee 2012</A>
+
+			<P><A href="">GDRE Liverpool 2013</A></P>
+            <P><A href="">Huntsville in Nashville GRB 2013</A></P>
+            <P><A href="">HEG Munich 2013</A></P>
+
+
+
+
+
+            <h2> Press Releases</h2>
+            <P> <a href="http://www.ljmu.ac.uk/NewsUpdate/index_123618.htm">Liverpool Gamma Ray Bursts in the Era of Ra
+pid Follow-up 2012</a>
+
+            <h2> Posters </h2>
+
+            <P><A href="IMPRSEvaluation_2012_poster.pdf">IMPRS Evaluation 2012</A>
+            <P><A href="">Huntsville in Nashville GRB 2013</A></P>
+            <P><A href="">MPE Fachbereit 2013</A></P>
+
+    </div>
+
+	<div class="span2"></div>
+</div>
+<br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+{% include "footer.html" %}
+{% endblock %}

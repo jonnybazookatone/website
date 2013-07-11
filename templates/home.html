@@ -1,0 +1,129 @@
+{% extends "skeleton.html" %}
+{% block content %}
+
+<style>
+    /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+    /* Carousel base class */
+
+    .carousel {
+      margin-bottom: 2px;
+      border: 5px solid gray;
+      width: 600px;
+    }
+/*    
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+      width: 200px;
+    }
+
+    .carousel-control {
+      height: 45px;
+      margin-top: 0;
+      font-size: 80px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: black;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 0px;
+      margin-top: 0px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 0px;
+    }
+    */
+</style>
+
+    <!-- Carousel
+================================================== -->
+
+ <div class="row-fluid">
+
+<div class="span1"></div>
+  <div class="span4">    
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="active item"><img src="https://lh5.googleusercontent.com/-q3NNW4GmYQE/TXVq-knJDdI/AAAAAAAAACE/1bhxl5-LM-k/w1196-h897-no/P2120157.JPG" alt=""></div>
+        <div class="item"><img src="https://lh5.googleusercontent.com/-A_DkirdsRrI/UXmoJFe34eI/AAAAAAAAAp4/MQAxolRsGXo/w1196-h897-no/P1010134.JPG" alt=""></div>
+        <div class="item"><img src="https://lh3.googleusercontent.com/-eKnHHD920Fs/UVb3K31npHI/AAAAAAAAAVY/QRI5yVjwKFo/w1196-h897-no/P1010012.JPG" alt=""></div>
+      </div>
+
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+ </div>
+
+
+<div class="span2">
+        <FONT SIZE=4>I am Jonny Elliott, a Ph.D. student currently working at the Max-Planck-Institut fur extraterrestrische Physik. My research involves Gamma-Ray Bursts, which are believed to be the light houses of massive stars ending their lives. My time is split between writing software, observing at and collborating with people from various telescopes around the world, and finally my hobbies.</FONT>
+</div>
+
+<div class="span3">
+  
+            <div id="content">
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Max-Planck-Institut+f%C3%BCr+extraterrestrische+Physik,+Gie%C3%9Fenbachstra%C3%9Fe,+Garching,+Germany&amp;aq=0&amp;oq=Max+Planck+Institut+fuer+extrat&amp;sll=53.800651,-4.064941&amp;sspn=12.322317,33.640137&amp;t=h&amp;ie=UTF8&amp;hq=Max-Planck-Institut+f%C3%BCr+extraterrestrische+Physik,&amp;hnear=Gie%C3%9Fenbachstra%C3%9Fe,+Germany&amp;ll=48.261841,11.671632&amp;spn=0.006295,0.006295&amp;output=embed"></iframe>
+            </div> <!-- end #content -->
+
+    
+    <address>
+    <strong>Max-Planck-Institut fuer extraterrestrische Physik</strong><br>
+    Giessenbachstrasse 1<br>
+    85748 Garching<br>
+    <a href="mailto:#">jonnyelliot@mpe.mpg.de</a><br>
+    <abbr title="Phone">P:</abbr> +49 89 30000 - 3535
+    
+ </div>
+
+
+
+
+
+
+      </div><!--/.nav-collapse -->
+    </div>
+
+
+
+<script>
+$(function(){
+      // carousel demo
+      $('.carousel').carousel()
+    })
+</script>
+
+{% include "footer.html" %}
+{% endblock %}
+
