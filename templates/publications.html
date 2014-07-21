@@ -8,61 +8,78 @@
             left: auto;
             right: auto;
           }
+          .modal {width:auto;}
         </style>
 
     <!-- Docs nav
     ================================================== -->
 
+
+
+
 <div class="container-fluid">
 
 <div class="col-md-4">
+
+
 	<div class="nav-pills" style="position: fixed;"> <!-- data-spy="affix" data-offset-top="500"> -->
     	<div class="navbar-inner">
             <ul class="nav" style="margin-top: 15px;">
           		<li><a href="/publications/">Publication List<i class="icon-chevron-right"></i></a></li>
-              <button type="button" data-toggle="modal" data-target="#LGRBR">Long Gamma-ray Burst Rate</button><br>
-              <button type="button" data-toggle="modal" data-target="#SOLARMET">Solar Metallicity GRB Galaxy</button>
+              <li><a data-toggle="modal" href="#LGRBR" class="btn btn-primary">Long Gamma-ray Burst Rate</a><li>
+              <li><a data-toggle="modal" href="#SOLARMET" class="btn btn-primary">Solar Metallicity GRB Galaxy</a></li>
+              <li><a data-toggle="modal" href="#PROMPTOPT" class="btn btn-primary">Promt Emission Optical Detections</a></li>
         	</ul>
     	</div> <!-- navbar-inner -->
 	</div> <!-- navbar -->
-</div>
 
-<div id="LGRBR" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 800px;">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-<h3 id="myModalLabel">Long Gamma-ray Burst Rate</h3>
-</div>
-<div class="modal-body">
-<p>The amount of star formation and how it has changed since the Universe began is usually described by the cosmic star formation history, or also commonly known as the Madau plot. This knowledge is used to place constraints on how galaxies evolve and can also be used to gain insights on time periods after the Big Bang.</p>
-</div>
 
-<div style="width: 500px; display: table-cell; vertical-align: middle ">
-  <img src="https://lh5.googleusercontent.com/-aej6iGQtrOQ/Ud6inIaC1VI/AAAAAAAAA9A/bt4yR2bAUCI/s576/csfh_end.jpg">
-</div>
 
-<div class="modal-body">
-<p>The problem is that the current methods that are used to make the Madau plot, struggle to go to higher redshifts. Normal methods involve measuring the star formation within galaxies that are at high redshift. The problem is that these galaxies can be very faint and so very difficult to detect with current state-of-the-art detectors. To tackle this problem, we utilise long gamma-ray bursts to estimate the cosmic star formation history to high redshifts, because of the intrinsically bright nature of gamma-ray bursts, which makes them easier to detect across all redshifts. Unfortunately, the way in which the long gamma-ray burst rate is converted into the cosmic star formation history is not so simple and, therefore, can change the results substantially. In our work, we investigate different biases that may exist and their underlying effects.</p>
-</div>
-<div class="modal-footer">
-<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-</div>
-</div>
+  <!-- Modal -->
+<div class="modal fade" id="LGRBR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 id="myModalLabel">Long Gamma-ray Burst Rate</h4>
+        </div>
+        <div class="modal-body">
+        <p>The amount of star formation and how it has changed since the Universe began is usually described by the cosmic star formation history, or also commonly known as the Madau plot. This knowledge is used to place constraints on how galaxies evolve and can also be used to gain insights on time periods after the Big Bang.</p>
+        </div>
 
-<div id="SOLARMET" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 800px;">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-<h3 id="myModalLabel">Solar Metallicity of GRB110918A's Host Galaxy</h3>
-</div>
-<div class="modal-body">
-<p>Long gamma-ray bursts are believed to be the beacon of the death of a massive, rapidly rotating star. Current simulations that try to create a long gamma-ray burst from these types of stars do not work, unless they exist in regions with low quantities of metals. Initial measurements of the regions in which long gamma-ray bursts occured have shown that they also preferrentially exist in metal poor regions. However, we used the spectrograph X-Shooter mounted at the Very Large Telescope, in Chile, to measure the metallicity in the host galaxy of a gamma-ray burst that occured on the 18th September 2011. We find that it has a metallicity close to that of our sun. This measurements adds to the few other cases that have been found so far, suggesting the idea of the progenitor it not as simple as it was first thought. </p>
-</div>
+        <div style="display: table-cell; vertical-align: middle ">
+          <img src="https://lh5.googleusercontent.com/-aej6iGQtrOQ/Ud6inIaC1VI/AAAAAAAAA9A/bt4yR2bAUCI/s576/csfh_end.jpg" width=400px align=center>
+        </div>
+        
+        <div class="modal-body">
+        <p>The problem is that the current methods that are used to make the Madau plot, struggle to go to higher redshifts. Normal methods involve measuring the star formation within galaxies that are at high redshift. The problem is that these galaxies can be very faint and so very difficult to detect with current state-of-the-art detectors. To tackle this problem, we utilise long gamma-ray bursts to estimate the cosmic star formation history to high redshifts, because of the intrinsically bright nature of gamma-ray bursts, which makes them easier to detect across all redshifts. Unfortunately, the way in which the long gamma-ray burst rate is converted into the cosmic star formation history is not so simple and, therefore, can change the results substantially. In our work, we investigate different biases that may exist and their underlying effects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div style="width: 1000px;">
-  <img class="img" src="https://lh5.googleusercontent.com/-1uUlkyM0O4w/Ud6l5zUvJII/AAAAAAAAA9w/_0xuRdpKd_g/s753/spec_host.jpg">
-</div>
-<div class="modal-footer">
-<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-</div>
+
+<div class="modal fade" id="SOLARMET" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 id="myModalLabel">Solar Metallicity of GRB110918A's Host Galaxy</h4>
+        </div>
+        <div class="modal-body">
+        <p>Long gamma-ray bursts are believed to be the beacon of the death of a massive, rapidly rotating star. Current simulations that try to create a long gamma-ray burst from these types of stars do not work, unless they exist in regions with low quantities of metals. Initial measurements of the regions in which long gamma-ray bursts occured have shown that they also preferrentially exist in metal poor regions. However, we used the spectrograph X-Shooter mounted at the Very Large Telescope, in Chile, to measure the metallicity in the host galaxy of a gamma-ray burst that occured on the 18th September 2011. We find that it has a metallicity close to that of our sun. This measurements adds to the few other cases that have been found so far, suggesting the idea of the progenitor it not as simple as it was first thought. </p>
+        </div>
+
+        <div style="display: table-cell; vertical-align: middle ">
+          <img src="https://lh5.googleusercontent.com/-1uUlkyM0O4w/Ud6l5zUvJII/AAAAAAAAA9w/_0xuRdpKd_g/s753/spec_host.jpg" width=500px>
+        </div>
+        
+        <div class="modal-body">
+        <p>The problem is that the current methods that are used to make the Madau plot, struggle to go to higher redshifts. Normal methods involve measuring the star formation within galaxies that are at high redshift. The problem is that these galaxies can be very faint and so very difficult to detect with current state-of-the-art detectors. To tackle this problem, we utilise long gamma-ray bursts to estimate the cosmic star formation history to high redshifts, because of the intrinsically bright nature of gamma-ray bursts, which makes them easier to detect across all redshifts. Unfortunately, the way in which the long gamma-ray burst rate is converted into the cosmic star formation history is not so simple and, therefore, can change the results substantially. In our work, we investigate different biases that may exist and their underlying effects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -222,6 +239,12 @@ pid Follow-up 2012</a>
 
 	<div class="col-md-2"></div>
 </div>
+
+<script>
+$('#openBtn').click(function(){
+  $('#myModal').modal({show:true})
+});
+</script>
 
 <!-- {% include "footer.html" %} -->
 {% endblock %}
