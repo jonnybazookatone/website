@@ -9,3 +9,5 @@ The webpages take from a skeleton structure, which is then filled using Python/F
 features are all implememented with the nice package, bootstrap.
 
 The website is hosted on heroku, which is free for low-traffic applications like this.
+
+The ADS
