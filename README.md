@@ -10,4 +10,4 @@ features are all implememented with the nice package, bootstrap.
 
 The website is hosted on heroku, which is free for low-traffic applications like this.
 
-The ADS is queried everytime that someone loads the "Publication" webpage, such that the references are always as up to date as possible.
+The ADS is queried everytime that someone loads the "Publication" webpage, such that the references are always as up to date as possible. For this to work, a DEV_KEY must be given.
