@@ -105,7 +105,7 @@ def get_refereed():
           bibcode = paper['bibcode']
         
           string_output = "<FONT COLOR=\"red\">%d</FONT>.\
-                            <a href=\"http://cdsads.u-strasbg.fr/abs/%s\" target="_blank">%s</a><br>\
+                            <a href=\"http://cdsads.u-strasbg.fr/abs/%s\" target=\"_blank\">%s</a><br>\
                             %s<br>\
                             %s %s<br><br>" % (refereed, bibcode, title, string_authors, string_journal, year)
           string_arr.append(string_output)
@@ -214,7 +214,7 @@ def get_gcn():
           bibcode = paper['bibcode']
         
           string_output = "<FONT COLOR=\"red\">%d</FONT>.\
-                            <a href=\"http://cdsads.u-strasbg.fr/abs/%s\" target="_blank">%s</a><br>\
+                            <a href=\"http://cdsads.u-strasbg.fr/abs/%s\" target=\"_blank\">%s</a><br>\
                             %s<br>\
                             %s %s<br><br>" % (refereed, bibcode, title, string_authors, string_journal, year)
           string_arr.append(string_output)
