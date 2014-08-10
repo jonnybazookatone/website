@@ -2,6 +2,7 @@
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -9,11 +10,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Jonny Elliott</a>
+          <a class="navbar-brand" href="/">Jonny Elliott</a>
         </div>
+
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li {% if request.path == "/" %} class="active" {% endif %}><a href="/">home</a></li>
 
             <ul class="nav navbar-nav">
               <li class="dropdown">
@@ -27,23 +28,12 @@
             </ul>
 
             <li {% if request.path == "/publications/" %} class="active" {% endif %}><a href="/publications/">science</a></li>
+            <!-- <li {% if request.path == "/cv/" %} class="active" {% endif %}><a href="/cv/">CV/resume</a></li> -->
             
           </ul>
 
-
-
-
-
-
-
           <ul class="nav navbar-nav navbar-right">
-          
-          <a href="http://www.freedomain.co.nr/" target="_blank" title="Free Domain Name"><img src="http://amsoooa.imdrv.net/soof62.gif" width="88" height="31" border="10" alt="Free Domain Name" /></a>
-          
-        <!--     <li>
-            <a href="http://stackoverflow.com/users/3715463/jonnybazookatone"><img src="http://stackoverflow.com/users/flair/3715463.png" width="208" height="58"></a>
-            </li> -->
-          
+            <li {% if request.path == "/contact/" %} class="active" {% endif %}><a href="/contact/">contact</a></li>  
           </ul>
           
         </div><!--/.nav-collapse -->

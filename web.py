@@ -19,5 +19,13 @@ def publications():
 def software():
     return render_template('software.html')
 
+@app.route('/cv/')
+def cv():
+    return render_template('cv.html')
+
+@app.route('/contact/')
+def contact():
+    return render_template('contact.html')
+
 if __name__ == "__main__":
   app.run()
