@@ -17,7 +17,7 @@
 
             <div class="panel panel-primary" style="position: fixed;">
                 <div class="panel-heading">
-                    <h4 class="text-center">My Projects</h4>
+                    <h4 class="text-center">Summary of publications</h4>
                 </div>
                 <div class="panel-body text-center">
                     <p class="lead">
@@ -39,12 +39,16 @@
                     </li>
                     <li class="list-group-item">
                         <a data-toggle="modal" href="#HIGHZGRB" class="btn btn-primary">High-z Long Gamma-ray Bursts</a>
+                        <span class="glyphicon glyphicon-ok pull-right"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a data-toggle=modal" href="#PHOTOZ" class="btn btn-primary">Photometric Redshift Estimation</a>
                         <span class="glyphicon glyphicon-remove pull-right"></span>
                     </li>
                 </ul>
-                <div class="panel-footer">
+                <!-- <div class="panel-footer">
                     <a class="btn btn-lg btn-block btn-primary">Other</a>
-                </div>
+                </div> -->
             </div>
 
 
@@ -119,6 +123,28 @@
 
   </div>
 
+    <div class="modal fade" id="HIGHZGRB" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 id="myModalLabel">Long Gamma-ray Bursts in Cosmological Simulations</h4>
+          </div>
+          <div class="modal-body">
+          <p> Gamma-ray burst host galaxy properties are increasingly difficult to measure at higher redshifts. This is a result of a combination of factors, with the main problems being that long exposure times and large telescopes are required. To this end, we chose an alternative route to investigate the host galaxies of long gamma-ray bursts by placing them directly inside a simulation.</p>
+          </div>
+
+          <div style="display: table-cell; vertical-align: middle ">
+            <img src="https://lh6.googleusercontent.com/Yxcc9tRcANRlakQ3PRBlGYjjj6851l0GO20l-R25kHE=w208-h172-p-no" width=400px align=center>
+          </div>
+          
+          <div class="modal-body">
+          <p> We find a sub-class of long gamma-ray burst host galaxies that would not exist, if the standard long gamma-ray burst progenitor model is true. A detection of this type of host galaxy would be in strong disagreement with the currently adopted collapsar model and consistent with recent observations of solar metallicity galaxies.
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <div class="col-md-8">
@@ -128,6 +154,12 @@
     
     <h2>Articles</h2>
       {% include "ads.html" %}
+
+    <h2>Software</h2>
+            <p><FONT COLOR="red">1</FONT>. <A href="http://ascl.net/1408.018" target="_blank">CosmoPhotoz: Photometric redshift estimation using generalized linear models </A><br>
+      de Souza, R. S., <b>Elliott, J.</b>, Krone-Martins, A., Ishida, E. E. O., Hilbe, J., Cameron, E. <br>
+      <u>Astrophysics Source Code Repository, ascl:1408.018</u> 2014
+      </p><br>
 
     <h2>Conference Proceedings</h2>
       <p><FONT COLOR="red">1</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2013arXiv1312.5099E" target="_blank">Simultaneous optical/gamma-ray observations of GRB 121217's prompt emission</A><br>
