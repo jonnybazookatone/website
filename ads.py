@@ -3,8 +3,8 @@
 
 '''
 This is an example script for a typical ADS use case: a simple
-institutional bibliography. It accepts as input a file containing 
-author names. It then searches ADS for records and outputs a tsv 
+institutional bibliography. It accepts as input a file containing
+author names. It then searches ADS for records and outputs a tsv
 of bibcodes, titles, publication and full author list
 '''
 import simplejson
@@ -15,7 +15,7 @@ import datetime
 BASE_URL = 'http://adslabs.org/adsabs/api/search/'
 
 # developer API access key
-DEV_KEY = ''
+DEV_KEY = 'G5hXxZuEhqnTyFx5'
 
 def get_refereed():
 
@@ -23,27 +23,27 @@ def get_refereed():
   #    DEV_KEY = os.environ['ADS_DEV_KEY']
 
   params = {}
-          
+
   # basic author search
   author = "Elliott"
   params['q'] = "author:%s,database:astronomy" % author
   # the fields we want back
   params['fl'] = 'title,pub,author,aff,volume,year'
-          
+
   # process 100 results at a time
   params['rows'] = '200'
-          
+
   #include our access key
   params['dev_key'] = DEV_KEY
 
   # database?
   params['filter'] = 'property:refereed AND database:astronomy AND year:[2010 TO *]'
-         
+
   # json is the default type, this is just for illustration purposes
   headers = {'content-type': 'application/json'}
-          
+
   # sys.stderr.write("issuing query for author %s\n" % author)
-          
+
   # for paginating through long results
   start = 0
   processed = 0
@@ -53,10 +53,10 @@ def get_refereed():
   while True:
     params['start'] = start
     r = requests.get(BASE_URL, params=params, headers=headers)
-      
+
     # uncomment if you want to see the actual http request url
     # sys.stderr.write(r.url + "\n")
-      
+
     if r.status_code != requests.codes.ok:
       # hopefully if something went wrong you'll get a json error message
       e = simplejson.loads(r.text)
@@ -103,7 +103,7 @@ def get_refereed():
           year = "%s" % paper['year']
           vol = "<b>%s</b>" % paper['volume']
           bibcode = paper['bibcode']
-        
+
           string_output = "<FONT COLOR=\"red\">%d</FONT>.\
                             <a href=\"http://cdsads.u-strasbg.fr/abs/%s\" target=\"_blank\">%s</a><br>\
                             %s<br>\
@@ -130,27 +130,27 @@ def get_gcn():
   #    DEV_KEY = os.environ['ADS_DEV_KEY']
 
   params = {}
-          
+
   # basic author search
   author = "Elliott"
   params['q'] = "author:%s,database:astronomy" % author
   # the fields we want back
   params['fl'] = 'title,pub,author,aff,volume,year'
-          
+
   # process 100 results at a time
   params['rows'] = '200'
-          
+
   #include our access key
   params['dev_key'] = DEV_KEY
 
   # database?
   params['filter'] = 'bibstem:GCN AND database:astronomy AND year:[2010 TO *]'
-         
+
   # json is the default type, this is just for illustration purposes
   headers = {'content-type': 'application/json'}
-          
+
   # sys.stderr.write("issuing query for author %s\n" % author)
-          
+
   # for paginating through long results
   start = 0
   processed = 0
@@ -160,10 +160,10 @@ def get_gcn():
   while True:
     params['start'] = start
     r = requests.get(BASE_URL, params=params, headers=headers)
-      
+
     # uncomment if you want to see the actual http request url
     # sys.stderr.write(r.url + "\n")
-      
+
     if r.status_code != requests.codes.ok:
       # hopefully if something went wrong you'll get a json error message
       e = simplejson.loads(r.text)
@@ -212,7 +212,7 @@ def get_gcn():
           year = "%s" % paper['year']
           vol = "<b>%s</b>" % paper['volume']
           bibcode = paper['bibcode']
-        
+
           string_output = "<FONT COLOR=\"red\">%d</FONT>.\
                             <a href=\"http://cdsads.u-strasbg.fr/abs/%s\" target=\"_blank\">%s</a><br>\
                             %s<br>\

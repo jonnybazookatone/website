@@ -42,8 +42,8 @@
                         <span class="glyphicon glyphicon-ok pull-right"></span>
                     </li>
                     <li class="list-group-item">
-                        <a data-toggle=modal" href="#PHOTOZ" class="btn btn-primary">Photometric Redshift Estimation</a>
-                        <span class="glyphicon glyphicon-remove pull-right"></span>
+                        <a data-toggle="modal" href="#PHOTOZ" class="btn btn-primary">Photometric Redshift Estimation</a>
+                        <span class="glyphicon glyphicon-ok pull-right"></span>
                     </li>
                 </ul>
                 <!-- <div class="panel-footer">
@@ -68,7 +68,7 @@
           <div style="display: table-cell; vertical-align: middle ">
             <img src="https://lh5.googleusercontent.com/-aej6iGQtrOQ/Ud6inIaC1VI/AAAAAAAAA9A/bt4yR2bAUCI/s576/csfh_end.jpg" width=400px align=center>
           </div>
-          
+
           <div class="modal-body">
           <p>The problem is that the current methods that are used to make the Madau plot, struggle to go to higher redshifts. Normal methods involve measuring the star formation within galaxies that are at high redshift. The problem is that these galaxies can be very faint and so very difficult to detect with current state-of-the-art detectors. To tackle this problem, we utilise long gamma-ray bursts to estimate the cosmic star formation history to high redshifts, because of the intrinsically bright nature of gamma-ray bursts, which makes them easier to detect across all redshifts. Unfortunately, the way in which the long gamma-ray burst rate is converted into the cosmic star formation history is not so simple and, therefore, can change the results substantially. In our work, we investigate different biases that may exist and their underlying effects.</p>
           </div>
@@ -91,7 +91,7 @@
           <div style="display: table-cell; vertical-align: middle ">
             <img src="https://lh3.googleusercontent.com/-zUjRRzn-kAk/U9KtoEuSf4I/AAAAAAAAC0A/qGwyWiH9Tzg/w576-h432-no/lc_grond.jpg" width=400px align=center>
           </div>
-          
+
           <div class="modal-body">
           <p>Utilising the Gamma-ray Burst Optical Near-infrared Detector (GROND) mounted at the Max-Planck-Gesselschaft 2.2 m telescope, in Chile, we observed GRB 121217A in the near-infrared wavelengths during its initial emission. With these observations, we demonstrated that the currently accepted model can be used to explain the spectral evolution.</p>
           </div>
@@ -113,7 +113,7 @@
           <div style="display: table-cell; vertical-align: middle ">
             <img src="https://lh5.googleusercontent.com/-1uUlkyM0O4w/Ud6l5zUvJII/AAAAAAAAA9w/_0xuRdpKd_g/s753/spec_host.jpg" width=500px>
           </div>
-          
+
           <div class="modal-body">
           <p>The problem is that the current methods that are used to make the Madau plot, struggle to go to higher redshifts. Normal methods involve measuring the star formation within galaxies that are at high redshift. The problem is that these galaxies can be very faint and so very difficult to detect with current state-of-the-art detectors. To tackle this problem, we utilise long gamma-ray bursts to estimate the cosmic star formation history to high redshifts, because of the intrinsically bright nature of gamma-ray bursts, which makes them easier to detect across all redshifts. Unfortunately, the way in which the long gamma-ray burst rate is converted into the cosmic star formation history is not so simple and, therefore, can change the results substantially. In our work, we investigate different biases that may exist and their underlying effects.</p>
           </div>
@@ -137,21 +137,54 @@
           <div style="display: table-cell; vertical-align: middle ">
             <img src="https://lh6.googleusercontent.com/Yxcc9tRcANRlakQ3PRBlGYjjj6851l0GO20l-R25kHE=w208-h172-p-no" width=400px align=center>
           </div>
-          
+
           <div class="modal-body">
-          <p> We find a sub-class of long gamma-ray burst host galaxies that would not exist, if the standard long gamma-ray burst progenitor model is true. A detection of this type of host galaxy would be in strong disagreement with the currently adopted collapsar model and consistent with recent observations of solar metallicity galaxies.
-</p>
+          <p> We find a sub-class of long gamma-ray burst host galaxies that would not exist, if the standard long gamma-ray burst progenitor model is true. A detection of this type of host galaxy would be in strong disagreement with the currently adopted collapsar model and consistent with recent observations of solar metallicity galaxies.</p>
           </div>
         </div>
       </div>
     </div>
 
 
+<div class="modal fade" id="PHOTOZ" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="myModalLabel">Photometric Redshift Estimation Using Poisson Regression</h4>
+      </div>
+      <div class="modal-body">
+      <p>Linear regression is an actively used tool in astronomy used to fit and predict many phenomena. For more complicated situations, machine learning involving complicated techniques such as neural networks are being implemented. Such techniques can take many hours and require large datasets to train them.</p>
+      </div>
+
+      <div style="display: table-cell; vertical-align: middle ">
+        <img src="https://lh3.googleusercontent.com/-9xe46NBtwMg/VEj7tazm5kI/AAAAAAAAC4A/Wf-Ua8JAZbU/s720-no/phat0_kde_2d.jpg" width=400px align=center>
+      </div>
+
+      <div class="modal-body">
+      <p>We introduce Poisson regression in the framework of an astronomical problem - estimating photometric redshifts. A technique that is commonly used in other sciences, but currently ignored in the astronomical community. We show it is a very fast technique, taking merely seconds, and does not require extremely large datasets like other common machine learning techniques.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <div class="col-md-8">
     <div class="page-header">
       <h1>Publication List</h1>
     </div>
-    
+
+    <h2>Submitted</h2>
+      <p><FONT COLOR="red">1</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2014arXiv1409.7699E" target="_blank">The Overlooked Potential of Generalized Linear Models in Astronomy-II: Gamma regression and photometric redshifts</A><br>
+      <b>Elliott, J.</b>, de Souza, R. S., Krone-Martins, A., Cameron, E., Ishida, E. E. O., Hilbe, J.<br>
+      <u>Astronomy and Computing</u> 2014
+      </p><br>
+
+      <p><FONT COLOR="red">2</FONT>. <A href="http://cdsads.u-strasbg.fr/abs/2014arXiv1408.2526E" target="_blank">The First Billion Years project: Gamma-ray bursts at z>5</A><br>
+      <b>Elliott, J.</b>, Khochfar, S., Greiner, J., Dalla Vecchia, C.<br>
+      <u>Monthly Notices of the Royal Society of Astronomy</u> 2014
+      </p><br>
+
     <h2>Articles</h2>
       {% include "ads.html" %}
 
@@ -192,7 +225,7 @@
       <u>American Institute of Physics</u>
       </p><br>
 
-       	
+
     <h2>GRB Circular Network</h2>
       {% include "gcn.html" %}
 
@@ -217,8 +250,13 @@
 
       <P><A href="https://drive.google.com/uc?export=&confirm=no_antivirus&id=0B-fIBmV94C4aZlNURGZnUFhlOGc" target="_blank">Cabo de Gata 2013</A></P>
 
-      <P><A href="" target="_blank"><FONT COLOR="gray">Edinburgh visit 2014</FONT> TBA</A></P>
-      <P><A href="" target="_blank"><FONT COLOR="gray">Edinburgh Higgs Centre Workshop 2014</FONT> TBA</A></P>
+      <P><A href="https://drive.google.com/uc?export=&confirm=no_antivirus&id=0B-fIBmV94C4aRUJ4UzBFajNlLWM" target="_blank"><FONT COLOR="gray">Edinburgh visit 2014</FONT></A></P>
+
+      <P><A href="https://drive.google.com/uc?export=&confirm=no_antivirus&id=0B-fIBmV94C4aNnRGODNGd1VNV0U" target="_blank"><FONT COLOR="gray">Edinburgh Higgs Centre Workshop 2014</FONT></A></P>
+
+      <P><A href="https://drive.google.com/uc?export=&confirm=no_antivirus&id=0B-fIBmV94C4aNWRjRTRxcHY3VW8" target="_blank"><FONT COLOR="gray">HEG Munich 2014</FONT></A></P>
+
+      <P><A href="" target="_blank"><FONT COLOR="gray">Universe of Digital Sky Surveys Naples 2014</FONT></A> TBA</P>
 
     <h2> Press Releases</h2>
       <P> <a href="http://www.ljmu.ac.uk/NewsUpdate/index_123618.htm" target="_blank">Liverpool Gamma Ray Bursts in the Era of Rapid Follow-up 2012</a></P>
