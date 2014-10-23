@@ -15,7 +15,7 @@ import datetime
 BASE_URL = 'http://adslabs.org/adsabs/api/search/'
 
 # developer API access key
-DEV_KEY = 'G5hXxZuEhqnTyFx5'
+DEV_KEY = ''
 
 def get_refereed():
 
