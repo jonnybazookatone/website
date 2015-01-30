@@ -10,12 +10,16 @@ of bibcodes, titles, publication and full author list
 import simplejson
 import requests
 import datetime
+import os
 
 # base API search url
 BASE_URL = 'http://adslabs.org/adsabs/api/search/'
 
 # developer API access key
-DEV_KEY = ''
+try:
+  from local_settings import DEV_KEY
+except:
+  DEV_KEY = os.environ['DEV_KEY']
 
 def get_refereed():
 
