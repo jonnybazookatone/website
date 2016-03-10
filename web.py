@@ -2,6 +2,8 @@ import ads
 from flask import Flask, render_template
 from flask.ext.cache import Cache
 
+ads.config.token = os.getenv('ADS_DEV_TOKEN', '')
+
 app = Flask(__name__)
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
