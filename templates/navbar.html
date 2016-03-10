@@ -16,20 +16,11 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
 
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">software <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li {% if request.path == "/github/" %} class="active" {% endif %}><a href="https://github.com/jonnybazookatone" target="_blank">github</a></li>
-                    <li {% if request.path == "/bitbucket/" %} class="active" {% endif %}><a href="https://bitbucket.org/jonnybazookatone" target="_blank">bitbucket</a></li>
-                    <li class="disabled"><a href="#">game design</a></li>
-                  </ul>
-              </li>
-            </ul>
+            <li {% if request.path == "/github/" %} class="active" {% endif %}><a href="https://github.com/jonnybazookatone" target="_blank">github</a></li>
 
-            <li {% if request.path == "/publications/" %} class="active" {% endif %}><a href="/publications/">science</a></li>
-            <li {% if request.path == "/cv/" %} class="active" {% endif %}><a href="/cv/">CV/resume</a></li>
-            
+            <li {% if request.path == "/publications/" %} class="active" {% endif %}><a href="/publications/">research</a></li>
+            <li {% if request.path == "/cv/" %} class="active" {% endif %}><a href="/cv/">resume</a></li>
+          
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
