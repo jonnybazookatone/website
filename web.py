@@ -1,4 +1,7 @@
+# encoding: utf-8
+import os
 import ads
+
 from flask import Flask, render_template
 from flask.ext.cache import Cache
 
