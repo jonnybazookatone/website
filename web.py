@@ -23,7 +23,9 @@ def publications():
     q = ads.SearchQuery(
         q='orcid:0000-0001-8043-4965',
         fl=['bibcode', 'author', 'title', 'citation_count', 'year', 'pub'],
-        sort='date desc'
+        sort='date desc',
+        rows=200,
+        max_pages=20
     )
     papers = []
     for paper in q:
